@@ -10,7 +10,6 @@ module.exports = {
   },
   module: {
     rules: [
-      ,
       {
         test: /\.m?js$/i,
         exclude: /(node_modules|bower_components)/,
