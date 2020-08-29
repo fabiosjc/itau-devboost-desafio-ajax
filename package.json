@@ -2,23 +2,8 @@
   "name": "itau-devboost-es6-desafio",
   "version": "1.0.0",
   "description": "Desafio Ajax para o bootcamp Itau Devboost React & Angular",
-  "main": "webpack.config.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^4.2.2",
-    "html-webpack-plugin": "^4.3.0",
-    "mini-css-extract-plugin": "^0.11.0",
-    "prettier": "^2.1.1",
-    "sass-loader": "^10.0.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
-  },
-  "scripts": {
-    "build": "webpack -f webpack.config.js --mode production",
-    "watch": "webpack -f webpack.config.js -w"
+  "author": {
+    "name": "Grupo 5 Devboost"
   },
   "contributors": [
     {
@@ -28,5 +13,25 @@
       "name": "Wallace Nascimento"
     }
   ],
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "prettier": "^2.1.1",
+    "sass-loader": "^10.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "webpack -f webpack.config.js --mode production",
+    "watch": "webpack -f webpack.config.js -w",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
   "license": "ISC"
 }
