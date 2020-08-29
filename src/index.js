@@ -1,4 +1,5 @@
 import { AwesomeForm } from './Component/Form';
+import { Content } from './Component/Content';
 
 const cepAPI = 'https://api.postmon.com.br/v1/cep';
 
@@ -20,9 +21,7 @@ const cepFormOptions = {
       ? console.log('cep vazio')
       : fetch(`${cepAPI}/${value}`)
           .then((resp) => resp.json())
-          .then((resp) => {
-            console.log(resp);
-          });
+          .then((resp) => Content('#cep-component', resp));
   },
 };
 
