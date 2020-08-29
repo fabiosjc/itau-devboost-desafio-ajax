@@ -1,0 +1,29 @@
+{
+  "name": "itau-devboost-es6-desafio",
+  "version": "1.0.0",
+  "description": "Desafio Ajax para o bootcamp Itau Devboost React & Angular",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "webpack": "^4.44.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "prettier": "^2.1.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "webpack -f webpack.config.js --mode production",
+    "watch": "webpack -f webpack.config.js -w"
+  },
+  "contributors": [
+    {
+      "name": "Fábio Henrique"
+    },
+    {
+      "name": "Wallace Nascimento"
+    }
+  ],
+  "license": "ISC"
+}
